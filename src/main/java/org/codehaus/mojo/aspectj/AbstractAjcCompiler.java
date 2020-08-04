@@ -269,6 +269,13 @@ public abstract class AbstractAjcCompiler extends AbstractAjcMojo {
      */
     @Parameter
     protected boolean showWeaveInfo;
+    
+    /**
+     * Flag to enable preview for Java 14.
+     *
+     */
+    @Parameter
+    protected boolean enablePreview;
 
     /**
      * Repeat compilation process N times (typically to do performance analysis).
@@ -865,6 +872,12 @@ public abstract class AbstractAjcCompiler extends AbstractAjcMojo {
     public void setShowWeaveInfo(boolean showWeaveInfo) {
         if (showWeaveInfo) {
             ajcOptions.add("-showWeaveInfo");
+        }
+    }
+    
+    public void setEnablePreview(boolean enablePreview) {
+        if (enablePreview) {
+            ajcOptions.add("--enable-preview");
         }
     }
 
