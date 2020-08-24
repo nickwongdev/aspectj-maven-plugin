@@ -1,4 +1,4 @@
-This is a fork of the aspectj-maven-plugin that has Java 11 support.
+This is a fork of the aspectj-maven-plugin that has Java 14 support.
 
 # Mojohaus AspectJ-Maven-Plugin
 
